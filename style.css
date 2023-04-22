@@ -1,0 +1,246 @@
+*{
+   /* box-sizing: border-box;*/
+    margin: 0;
+    padding: 0 ;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+p{
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    
+}
+
+a{
+    text-decoration: none; 
+    color: black;   
+    font-size: 16PX;
+}
+
+h1{
+    font-size:22px ;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/* maincontainer */
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+
+/* header */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70px;
+}
+
+.logo-booki{
+    height: 20px;
+    
+}
+
+
+.menu-navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+.menuItem{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 400;  
+    border-top: 2px solid transparent;
+    height: 100%;
+}
+
+.menuItem:hover{
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+}
+
+/* main-first-part -partie recherche et filtre */
+.first-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 35px;
+    padding: 0 50px;
+}
+
+.headline{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 49px;
+    font-size: 18px;  
+}
+
+.localisation{
+    display: flex;
+    background-color:#F2F2F2 ;
+    height: 100%;
+    width: 50px;
+    border-radius: 15px 0 0 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    height:47PX;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-top:1px solid #F2F2F2;
+    border-bottom:1px solid #F2F2F2 ;
+    padding: 0 24px;  
+}
+
+.search input{
+    text-align: center;
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700 ;
+    outline: none;
+   
+}
+
+input::placeholder{
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.btn-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    padding: 15px 16px;
+    border-radius: 0px 15px 15px 0px;
+    border:1px solid #0065FC;
+    font-size: 18px;
+    height: 100%;
+    color: white;
+    font-weight: 700;
+}
+/* filterbar */
+.filterBar{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    height: 50px;   
+}
+
+.filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    border: 2px solid #D9D9D9; 
+    border-radius: 25px;
+    padding: 4px 19px;
+    font-weight: 700;
+    font-size: 17px;     
+}
+
+.filter:hover{
+    background-color:#DEEBFF;
+}
+
+.filter i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color) ;
+}
+
+/* infobar */
+
+.infobar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    height: 20px;    
+}
+
+.infobar i{
+    display: flex;
+    border: 1px solid #D9D9D9;
+    color: var(--main-color);
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: row;  
+    justify-content:flex-start ;
+    background-color:  #F2F2F2;
+    margin: 0 50px;
+}
+ 
+.end-box{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 20px;
+    gap: 15px;
+}
+
+
+
+
+
+                   
+
+                
+
+
+
+
+
+
+
+
