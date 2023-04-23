@@ -136,7 +136,6 @@ header{
 }
 
 input::placeholder{
-    color: black;
     font-weight: 700;
     font-size: 18px;
 }
