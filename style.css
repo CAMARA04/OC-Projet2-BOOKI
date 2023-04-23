@@ -5,17 +5,17 @@
     font-family: 'Raleway', sans-serif;
 }
 
+/* Parametrage des couleurs du site */
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
-
+/* attibuts communs à toute la page du site */
 p{
     font-weight: 400;
     font-size: 16px;
     color: black;
-    
 }
 
 a{
@@ -42,8 +42,7 @@ h3{
     flex-direction: column;
     gap: 20px;
     max-width: 1440px;
-    margin: 0 auto;
-    
+    margin: 0 auto;  
 }
 
 /* header */
@@ -56,13 +55,12 @@ header{
     padding-right: 20px;
     height: 70px;
 }
-
+/* logo */
 .logo-booki{
-    height: 20px;
-    
+    height: 20px;  
 }
 
-
+/* navigation header */
 .menu-navigation{
     display: flex;
     flex-direction: row;
@@ -99,6 +97,7 @@ header{
     gap: 8px;
 }
 
+/* barre de recherche 1ere partie */
 .search-bar{
     display: flex;
     flex-direction: row;
@@ -134,7 +133,6 @@ header{
     font-size: 18px;
     font-weight: 700 ;
     outline: none;
-   
 }
 
 input::placeholder{
@@ -156,6 +154,7 @@ input::placeholder{
     color: white;
     font-weight: 700;
 }
+
 /* filterbar */
 .filterBar{
     display: flex;
@@ -191,7 +190,6 @@ input::placeholder{
 }
 
 /* infobar */
-
 .infobar{
     display: flex;
     flex-direction: row;
@@ -221,6 +219,7 @@ footer{
     margin: 0 50px;
 }
  
+/* code similaire aux aux 3 div du footer */
 .end-box{
     display: flex;
     flex-direction: column;
