@@ -1,9 +1,4 @@
-*{
-   /* box-sizing: border-box;*/
-    margin: 0;
-    padding: 0 ;
-    font-family: 'Raleway', sans-serif;
-}
+
 
 /* Parametrage des couleurs du site */
 :root {
@@ -12,6 +7,14 @@
     --filter-bg-color: #DEEBFF;
 }
 /* attibuts communs à toute la page du site */
+
+*{
+   /* box-sizing: border-box;*/
+    margin: 0;
+    padding: 0 ;
+    font-family: 'Raleway', sans-serif;
+}
+
 p{
     font-weight: 400;
     font-size: 16px;
@@ -82,6 +85,7 @@ header{
     border-top: 2px solid var(--main-color);
 }
 
+
 /* main-first-part -partie recherche et filtre */
 .first-part{
     display: flex;
@@ -117,25 +121,16 @@ header{
 }
 
 .search{
-    height:47PX;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    border-top:1px solid #F2F2F2;
-    border-bottom:1px solid #F2F2F2 ;
-    padding: 0 24px;  
-}
-
-.search input{
-    text-align: center;
-    border: none;
+    border:1px solid #F2F2F2;
+    padding: 0 24px;
+    height:49PX;
     color: black;
     font-size: 18px;
     font-weight: 700 ;
     outline: none;
 }
 
-input::placeholder{
+search::placeholder{
     font-weight: 700;
     font-size: 18px;
 }
@@ -145,9 +140,9 @@ input::placeholder{
     align-items: center;
     justify-content: center;
     background-color: var(--main-color);
-    padding: 15px 16px;
+    padding: 0px 16px;
     border-radius: 0px 15px 15px 0px;
-    border:1px solid #0065FC;
+    border:none;
     font-size: 18px;
     height: 100%;
     color: white;
@@ -159,20 +154,24 @@ input::placeholder{
     display: flex;
     flex-direction: row; 
     align-items: center;
-    justify-content: flex-start;
-    gap: 15px;
-    height: 50px;   
+    gap: 15px;   
 }
 
+.filters{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 20px;  
+}
 .filter{
+    height: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     gap:10px;
     border: 2px solid #D9D9D9; 
     border-radius: 25px;
-    padding: 4px 19px;
+    padding: 0 20px;
     font-weight: 700;
     font-size: 17px;     
 }
@@ -182,9 +181,6 @@ input::placeholder{
 }
 
 .filter i{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: var(--main-color) ;
 }
 
@@ -192,21 +188,22 @@ input::placeholder{
 .infobar{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    gap: 10px;
-    height: 20px;    
+    gap: 15px;   
 }
 
-.infobar i{
+.iconInfo{
+
+    width: 30px;
+    height: 30px;
     display: flex;
-    border: 1px solid #D9D9D9;
-    color: var(--main-color);
-    width: 24px;
-    height: 24px;
     align-items: center;
     justify-content: center;
+    border: 1px solid #D9D9D9;
     border-radius: 50%;
+}
+.iconInfo > i{
+    color: var(--main-color);
 }
 
 /* footer */
