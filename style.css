@@ -250,9 +250,8 @@ search::placeholder{
     font-weight: 700;
 
 }
-
-.neutralStar {
-    color: var(--main-bg-color)
+.fa-solid{
+    color: var(--main-color);
 }
 
 /* Hebergements */
@@ -272,9 +271,7 @@ search::placeholder{
 
 .hebergements-line{
     display: flex;
-    gap: 30px;
-    
-    
+    gap: 30px; 
 }
 
 .hebergements-line .card{
@@ -356,7 +353,17 @@ search::placeholder{
     margin-bottom: 5px;
 }
 
+/* Afficher plus */
 
+.more-hotels{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.neutral-star{
+    color: var(--main-bg-color)
+}
 
 
 
