@@ -15,6 +15,8 @@
     font-family: 'Raleway', sans-serif;
 }
 
+
+
 p{
     font-weight: 400;
     font-size: 16px;
@@ -39,11 +41,17 @@ h3{
     line-height: 21px;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
 /* maincontainer */
 .mainContainer{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 35px;
     max-width: 1440px;
     margin: 0 auto;  
 }
@@ -54,7 +62,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-right: 20px;
     height: 70px;
 }
@@ -213,7 +221,7 @@ search::placeholder{
 .hebergements-and-populaires{
     display: flex;
     justify-content: space-between;
-    margin: 20px 50px;
+    margin: 0px 50px;
 
 }
 
@@ -365,6 +373,43 @@ search::placeholder{
     color: var(--main-bg-color)
 }
 
+                                        /* Activités à Marseille  */
+
+.activites-a-marseille{
+    display: flex;
+    flex-direction: column;
+    gap: ;
+    margin:0px 50px ;
+    padding: 30px;
+    gap: 30px;
+}
+
+.activites-container{
+    display: flex;
+    gap: 30px;
+    padding: 0px;
+    align-items: flex-start;
+}
+
+.activites{
+    width: 25%;
+}
+
+.activites img{
+    border-radius: 20px 20px 0px 0px;
+    height: 380px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.lieu-activite{
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    
+    
+}
 
 
 
