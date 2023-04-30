@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0 ;
     font-family: 'Raleway', sans-serif;
+
 }
 
 
@@ -436,7 +437,42 @@ footer{
     gap: 15px;
 }
 
+                                    /* VESION TABLETTE */
 
+@media (max-width: 1024px){
+    .hebergements-and-populaires{
+        flex-direction: column;
+        gap: 50px ;
+    }
+
+    .hebergements{
+        width: 100%;
+    }
+
+    .populaires{
+        width: 100%;
+    }
+
+    .populaires-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards .card {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+
+}
 
 
 
