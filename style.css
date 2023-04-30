@@ -158,6 +158,10 @@ search::placeholder{
     font-weight: 700;
 }
 
+.btn-search-mobile{
+    display: none;
+}
+
 /* filterbar */
 .filterBar{
     display: flex;
@@ -437,7 +441,8 @@ footer{
     gap: 15px;
 }
 
-                                    /* VESION TABLETTE */
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
 
 @media (max-width: 1024px){
     .hebergements-and-populaires{
@@ -470,20 +475,88 @@ footer{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-
-
 }
 
 
 
-                   
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
 
-                
+  
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px; 
+    height: 100%;
+    
 
+}
 
+.mainContainer{
+    display:flex;
+    flex-direction: column;
+    /* gap: 30px; */
+}
 
+.logo-booki{
+    padding: 30px;
+}
 
+.menu-navigation{
+    display: flex;
+   
+    align-items: flex-start;
+    padding: 0px;
+    width: 100%;
+    gap: 0px;
+    height: 36px;
+   
+}
 
+.menuItem:hover{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+.menuItem:hover{
+    color: var(--main-color);
+    border-top:none;
+}
+
+.menuItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.btn-search{
+    display: none;
+}
+
+.btn-search-mobile{
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    padding:15px;
+    border-radius:15px;
+    border:none;
+    height: 100%;  
+    width: 49px;
+    
+    
+}
+
+.btn-search-mobile i{
+    color: white;
+}
+
+.search{
+    border-right: none;
+}
+
+}
 
 
 
