@@ -385,8 +385,6 @@ search::placeholder{
 .activites-a-marseille{
     display: flex;
     flex-direction: column;
-    gap: ;
-    
     padding: 30px;
     gap: 30px;
 }
@@ -396,6 +394,7 @@ search::placeholder{
     gap: 30px;
     padding: 0px;
     align-items: flex-start;
+    
 }
 
 .activites{
@@ -403,8 +402,6 @@ search::placeholder{
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
     background-color: white;
-    
-
 }
 
 .activites img{
@@ -414,15 +411,15 @@ search::placeholder{
     object-fit: cover;
 }
 
+
+
 .lieu-activite{
     margin: 0;
     padding: 20px;
     font-size: 16px;
     line-height: 19px;
-    
-    
+   
 }
-
 
 
 /* footer */
@@ -477,6 +474,23 @@ footer{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       justify-content: flex-end;
+        height: 100%;
+        
+    }
+
+    .activites img{
+        height: 200px;
+    }
+
+    
+    
+   
 }
 
 
@@ -494,6 +508,8 @@ header{
 
 main{
     padding: 0px;
+  
+    
 }
 
 .mainContainer{
@@ -534,6 +550,14 @@ main{
     width: 50%;
 }
 
+.first-part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:0px 20px;
+    
+}
+
 .btn-search{
     display: none;
 }
@@ -557,6 +581,10 @@ main{
     border-right: none;
 }
 
+.search-bar{
+    width: 100%;
+}
+
 .filterBar{
     display: flex;
     flex-direction: column;
@@ -578,6 +606,7 @@ main{
     gap: 15px;
 }
 
+
 .populaires{
     display: flex;
     flex-direction: column;
@@ -586,8 +615,6 @@ main{
     width: 100%;
     border-radius:0px;
     padding: 30px 20px;
-    
-
 }
 
 .populaires-title{
@@ -633,12 +660,13 @@ main{
 
 /* Activites à Marseille */
 
-.activites-a-marseille,.activites-container{
+.activites-a-marseille{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
-    width: 100%;
+    gap: 15px;
+    padding: 30px;
+ 
 }
 
 .activites{
@@ -647,6 +675,15 @@ main{
 
 .activites img{
     height: 140px;
+    width: 100%;
+}
+
+.activites-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+
 }
 
 
