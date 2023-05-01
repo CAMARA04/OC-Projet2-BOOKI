@@ -46,6 +46,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 35px;
+    padding: 0px 50px;
 }
 
 /* maincontainer */
@@ -56,6 +57,7 @@ main{
     max-width: 1440px;
     margin: 0 auto;  
 }
+
 
 /* header */
 header{
@@ -101,7 +103,7 @@ header{
     flex-direction: column;
     justify-content: flex-start;
     gap: 35px;
-    padding: 0 50px;
+    
 }
 
 .headline{
@@ -226,7 +228,7 @@ search::placeholder{
 .hebergements-and-populaires{
     display: flex;
     justify-content: space-between;
-    margin: 0px 50px;
+    
 
 }
 
@@ -384,7 +386,7 @@ search::placeholder{
     display: flex;
     flex-direction: column;
     gap: ;
-    margin:0px 50px ;
+    
     padding: 30px;
     gap: 30px;
 }
@@ -482,15 +484,12 @@ footer{
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
-  
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px; 
     height: 100%;
-    
-
 }
 
 .mainContainer{
@@ -543,9 +542,7 @@ header{
     border-radius:15px;
     border:none;
     height: 100%;  
-    width: 49px;
-    
-    
+    width: 49px;  
 }
 
 .btn-search-mobile i{
@@ -556,7 +553,91 @@ header{
     border-right: none;
 }
 
+.filterBar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.filters{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hebergements-and-populaires{
+    display: flex;
+    flex-direction: column-reverse;
+    padding:0px;
+    width: 100%;
+}
+
+.populaires{
+   
+    gap: 15px;
+    width: 100%;
+    
+}
+
+.populaires-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mobile-Hebergements-cards */
+.hebergements-line,.populaires-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    padding: 0px;
+}
+
+.populaires-cards .card, .hebergements-line .card{
+    width: 100%;
+}
+
+/* Activites à Marseille */
+
+.activites-a-marseille,.activites-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+}
+
+.activites{
+    width: 100%;
+}
+
+.activites img{
+    height: 140px;
 }
 
 
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    margin: 0px;
+    gap: 30px;
+   
+}
+
+.end-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+    width: 100%;
+}
 
