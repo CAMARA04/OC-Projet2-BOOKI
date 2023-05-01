@@ -492,6 +492,10 @@ header{
     height: 100%;
 }
 
+main{
+    padding: 0px;
+}
+
 .mainContainer{
     display:flex;
     flex-direction: column;
@@ -571,19 +575,26 @@ header{
     flex-direction: column-reverse;
     padding:0px;
     width: 100%;
+    gap: 15px;
 }
 
 .populaires{
-   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 15px;
     width: 100%;
+    border-radius:0px;
+    padding: 30px 20px;
     
+
 }
 
 .populaires-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 /* Mobile-Hebergements-cards */
@@ -596,8 +607,28 @@ header{
     padding: 0px;
 }
 
+.populaires-cards{
+    width: 100%;
+}
+
+.hebergements{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   background: none;
+    padding: 30px 20px;
+    border-radius: 0px;
+}
+
+.hebergements-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 .populaires-cards .card, .hebergements-line .card{
     width: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
 /* Activites à Marseille */
