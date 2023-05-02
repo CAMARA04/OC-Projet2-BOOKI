@@ -13,10 +13,7 @@
     margin: 0;
     padding: 0 ;
     font-family: 'Raleway', sans-serif;
-
 }
-
-
 
 p{
     font-weight: 400;
@@ -62,7 +59,6 @@ main{
 /* header */
 header{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-left: 30px;
@@ -77,7 +73,6 @@ header{
 /* navigation header */
 .menu-navigation{
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 20px;
     height: 100%;
@@ -95,7 +90,6 @@ header{
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
 }
-
 
 /* main-first-part -partie recherche et filtre */
 .first-part{
@@ -115,7 +109,6 @@ header{
 /* barre de recherche 1ere partie */
 .search-bar{
     display: flex;
-    flex-direction: row;
     align-items: center;
     height: 49px;
     font-size: 18px;  
@@ -167,21 +160,17 @@ search::placeholder{
 /* filterbar */
 .filterBar{
     display: flex;
-    flex-direction: row; 
     align-items: center;
     gap: 15px;   
 }
 
 .filters{
     display: flex;
-    flex-direction: row; 
-    align-items: center;
     gap: 20px;  
 }
 .filter{
     height: 50px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap:10px;
     border: 2px solid #D9D9D9; 
@@ -202,7 +191,6 @@ search::placeholder{
 /* infobar */
 .infobar{
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 15px;   
 }
@@ -228,8 +216,6 @@ search::placeholder{
 .hebergements-and-populaires{
     display: flex;
     justify-content: space-between;
-    
-
 }
 
 .hebergements , .populaires{
@@ -391,11 +377,8 @@ search::placeholder{
 
 .activites-container{
     display: flex;
-    flex-direction: row;
     gap: 30px;
     padding: 0px;
-    
-    
     
 }
 
@@ -416,7 +399,7 @@ search::placeholder{
 
 
 .lieu-activite{
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -428,8 +411,7 @@ search::placeholder{
 
 /* footer */
 footer{
-    display: flex;
-    flex-direction: row;  
+    display: flex;  
     justify-content: space-between;
     background-color:  #F2F2F2;
     margin: 0 50px;
@@ -496,35 +478,25 @@ footer{
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
-header{
-    display: flex;
+ header{
     flex-direction: column;
-    align-items: center;
     padding: 0px; 
     height: 100%;
 }
 
 main{
-    padding: 0px;
-  
-    
+    padding: 0px;  
 }
 
 .mainContainer{
-    display:flex;
-    flex-direction: column;
-    /* gap: 30px; */
-}
+    gap: 30px; 
+} 
 
 .logo-booki{
     padding: 30px;
 }
 
 .menu-navigation{
-    display: flex;
-   
-    align-items: flex-start;
-    padding: 0px;
     width: 100%;
     gap: 0px;
     height: 36px;
@@ -532,27 +504,18 @@ main{
 }
 
 .menuItem:hover{
-    color: var(--main-color);
+    
     border-bottom: 2px solid var(--main-color);
-}
-
-.menuItem:hover{
-    color: var(--main-color);
-    border-top:none;
+    border-top:none
 }
 
 .menuItem{
-    display: flex;
     justify-content: center;
-    align-items: center;
     width: 50%;
 }
 
 .first-part{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding:0px 20px;
+    padding:0px 20px; 
     
 }
 
@@ -585,10 +548,9 @@ main{
 }
 
 .filterBar{
-    display: flex;
+    
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
     gap: 20px;
 }
 
@@ -598,57 +560,36 @@ main{
 }
 
 .hebergements-and-populaires{
-    display: flex;
     flex-direction: column-reverse;
-    padding:0px;
     width: 100%;
     gap: 15px;
 }
 
-
 .populaires{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 15px;
     width: 100%;
     border-radius:0px;
     padding: 30px 20px;
 }
 
-.populaires-title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
 /* Mobile-Hebergements-cards */
 .hebergements-line,.populaires-cards{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     gap: 15px;
-    padding: 0px;
-}
-
-.populaires-cards{
-    width: 100%;
 }
 
 .hebergements{
-    display: flex;
-    flex-direction: column;
     gap: 15px;
-   background: none;
+    background: none;
     padding: 30px 20px;
     border-radius: 0px;
+    width: 100%;
 }
 
 .hebergements-cards{
-    display: flex;
-    flex-direction: column;
     gap: 15px;
 }
 .populaires-cards .card, .hebergements-line .card{
@@ -665,7 +606,6 @@ main{
     align-items: flex-start;
     gap: 15px;
     padding: 30px;
- 
 }
 
 .activites{
@@ -683,10 +623,7 @@ main{
     gap: 15px;
     width: 100%;
 
-}
-
-
-
+} 
 
 /* footer */
 footer{
