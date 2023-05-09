@@ -221,7 +221,6 @@ search::placeholder{
 }
 
 .section-title{
-    margin: 0;
     font-size: 22px;
 }
 
@@ -252,6 +251,14 @@ search::placeholder{
 /* Hebergements */
 
 .lien-card{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.lien-card-populaires{
+    display: flex;
     width: 100%;
 }
 
@@ -363,7 +370,7 @@ search::placeholder{
     color: var(--main-bg-color)
 }
 
-                                        /* Activités à Marseille  */
+                    /* Activités à Marseille  */
 
 .activites-a-marseille{
     display: flex;
@@ -374,9 +381,7 @@ search::placeholder{
 
 .activites-container{
     display: flex;
-    gap: 30px;
-    
-    
+    gap: 30px;   
 }
 
 .activites{
@@ -481,7 +486,8 @@ footer{
 }
 
 main{
-    padding: 0px;  
+    padding: 0px; 
+    gap:0px; 
 }
 
 .mainContainer{
@@ -571,18 +577,22 @@ main{
 }
 
 /* Mobile-Hebergements-cards */
-.hebergements-line,.populaires-cards{
+.populaires-cards{
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
 .hebergements{
-    gap: 15px;
     background: none;
     padding: 30px 20px;
     border-radius: 0px;
-    width: 100%;
+    width: auto;
+}
+
+.hebergements-line{
+    flex-direction: column;
+    gap: 15px; 
 }
 
 .hebergements-cards{
@@ -590,8 +600,7 @@ main{
 }
 
 .populaires-cards .card, .hebergements-line .card{
-    width: 100%;
-    padding: 0px;
+    width: auto;
     margin: 0px;
 }
 
@@ -599,6 +608,7 @@ main{
 
 .activites-a-marseille{
     gap: 15px;
+    padding: 0px 20px;
 }
 
 .activites{
