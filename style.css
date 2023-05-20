@@ -268,7 +268,13 @@ search::placeholder{
     gap: 30px;
     width: 65%;
 }
-
+.article-hebergements{
+    width: 100%;
+}
+.article-populaires{
+    width: 100%;
+    display: flex;
+}
 .hebergements-cards{
     display: flex;
     flex-direction: column;
